@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top-header {
+    background-color: #b30000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a:not(#cart-icon-btn) {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover:not(#cart-icon-btn) {
+    color: #ffd700;
+}
+
+#cart-icon-btn {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s, color 0.3s;
+}
+
+#cart-icon-btn:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.sub-text {
+    font-size: 20px;
+    color: #ffffff;
+    word-spacing: 5px;
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 600px;
+    position: relative;
+}
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero h1, .hero p, .hero .btn {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.btn {
+    background-color: #f6f5f5;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 20px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.our {
+    margin-bottom: 50px;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%s;
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: centerS;
+    gap: 30px;
+    font-family: monospace;
+}
+
+.category {
+    background: rgb(255, 252, 252);
+    padding: 30px;
+    flex: 1;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 0;
+    font-size: 15px;
+}
+
+.products-container .products {
+    backdrop-filter: #f5f5ff  ;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.products img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.products h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.products p{
+    color: #ffffff;
+    margin-bottom:  15px;  
+}
+
+.products button {
+    background-color:#ffffff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.products button:hover {
+    background-color: #b22222;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%s;
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: centerS;
+    gap: 30px;
+    font-family: monospace;
+    box-shadow: #ffd700;
+}
+
+.category {
+    background: rgb(185, 18, 18);
+    padding: 30px;
+    flex: 1;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 0;
+    font-size: 15px;
+}
+
+.products-container .products {
+    backdrop-filter: #b30000  ;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: monospace;
+}
+
+section.section .products-container .products {
+    box-shadow: 0 0 20px rgba( 255 , 0, 0, 0.7);
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    transform: translateY(-8px);
+}
+
+.products img {
+    width: 100%;
+    height: 310px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.products h3 {
+    margin-bottom: 10px;
+}
+
+.products p{
+    color: #ffffff;
+    margin-bottom:  15px;  
+    font-size: 16px;
+}
+
+.products button {
+    background-color:#222;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.products button:hover {
+    background-color: #b22222;
+}
+
+.about {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.footer {
+    background-color: #0a0a0a;
+    border-top: 3px solid #b30000;
+    padding: 60px 20px 20px 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-about, .footer-contact {
+    flex: 1;
+    max-width: 500px;
+}
+
+.footer h3 a {
+    color: #b30000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer h3 a:hover {
+    color: #ffd700;
+}
+
+.footer h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer p {
+    color: #aaa;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer p a {
+    color: #66cc33;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="Checkpage.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo">FIGVORA</div>
+        <nav class="nav-links">
+            <a href="../homepage/index.html" class="active">Home</a>
+            <a href="../Catalog/Catalog Part.html">Catalogue</a>
+            <a href="../contact/contact.html">Contact</a>
+            <a href="../about/about.html">About</a>
+            <a href="../checkout/Checkout.html" id="cart-icon-btn" aria-label="Shopping Cart">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <div class="Checkout-layout">
+
+        <form action="/submit-checkout" method="post" class="checkout-form">
+
+            <h1 class="4">Information</h1>
+            <p>Please provide your details below:</p>
+          
+            <label for="name"> Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Full Name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number" placeholder="Enter Phone Number" required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter Address" required><br><br>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select><br><br>
+
+            <label for="Bank">Bank Account:</label>
+            <input type="text" id="Bank" name="Bank" placeholder="Enter Bank Account" required><br><br>
+
+                <button type="submit">Submit</button>
+        </form>
+
+        <p id="message"></p>
+        <div class="summary">
+            <h2> Order Summary</h2>
+
+            <div id="cartitems">
+                <p>No products in the cart.</p>
+            </div>
+
+            <hr>
+            <p>Subtotal: $<span id="subtotal">0.00</span></p>
+            <p>Shipping: $<span id="shipping">0.00</span></p>
+
+            <h3>Total Amount: $<span id="totalamount">0.00</span></h3>
+
+            <button type="button" id="purchase-btn">Complete Purchase</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about" id="about-section">
+                <h3><a href="#about-section">About Figvora</a></h3>
+                <p>Figvora is a premier online e-commerce destination dedicated to collectors and enthusiasts. We specialize in bringing you high-quality anime action figures, detailed statues, and exclusive collectibles directly to your doorstep.</p>
+            </div>
+            <div class="footer-contact" id="contact-section">
+                <h3><a href="#contact-section">Contact Information</a></h3>
+                <p>Email: <a href="mailto:support@figvora.com">support@figvora.com</a></p>
+                <p>Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
+                <p>Hours: Mon - Fri, 9am - 6pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Figvora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Checkout.js"></script>
+</body>
+</html>

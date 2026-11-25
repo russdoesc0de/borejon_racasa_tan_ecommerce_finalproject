@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.top-header {
+    background-color: #b30000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a:not(#cart-icon-btn) {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover:not(#cart-icon-btn) {
+    color: #ffd700;
+}
+
+#cart-icon-btn {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s, color 0.3s;
+}
+
+#cart-icon-btn:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+.about,
+.why {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+/* First section */
+.about-img,
+.about-content1 {
+    width: 50%;
+}
+
+.about-img img,
+.why-img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.about-content1 {
+    padding: 60px;
+    margin-top: 20px;
+}
+
+/* Second section */
+.why-content,
+.why-img {
+    width: 50%;
+}
+
+.why-content {
+    padding: 30px;
+}
+
+.about-content1 h3,
+.why-content h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    gap: 30px;
+}
+
+.about-content1 p,
+.why-content p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: gray;
+    gap: 30px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.why-img, .about-img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pill {
+    background: none;
+    border: 24px solid #ffffff;
+    color: #b30000; 
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.25;
+  text-align: center;
+  color: #2b2b2b;
+  margin-bottom: 32px;
+}
+
+.store-mission {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2b2b2b;
+  margin-bottom: 32px;
+}
+
+.about-content {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-content, store vision,choosing our store {
+    text-align: center;
+    width: 100%;
+    background-color: #b30000;
+}
+
+.about-container, .about4 {
+   background-color: #ffffff;
+}
+
+.banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+}

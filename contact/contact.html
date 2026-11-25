@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactpage.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo">FIGVORA</div>
+        <nav class="nav-links">
+            <a href="../homepage/index.html" class="active">Home</a>
+            <a href="../Catalog/Catalog Part.html">Catalogue</a>
+            <a href="../contact/contact.html">Contact</a>
+            <a href="../about/about.html">About</a>
+            <a href="../checkout/Checkout.html" id="cart-icon-btn" aria-label="Shopping Cart">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="2">Contact Us</h1>
+        <p>Have a question? We love to hear from you.</p>
+
+        <form id="contactForm">
+
+            <label>Your Name</label>
+            <input type="text" id="name"
+            placeholder="Enter your name" required>
+
+            <label>Your Email</label>
+            <input type="email" id="email"
+            placeholder="Enter your email" required>
+
+            <label>Subject</label>
+            <input type="text" id="subject"
+            placeholder="Enter subject" required>
+
+            <label>Message</label>
+            <textarea id="message"
+            placeholder="Write your message..."
+            required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <p id="response"></p>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about" id="about-section">
+                <h3><a href="#about-section">About Figvora</a></h3>
+                <p>Figvora is a premier online e-commerce destination dedicated to collectors and enthusiasts. We specialize in bringing you high-quality anime action figures, detailed statues, and exclusive collectibles directly to your doorstep.</p>
+            </div>
+            <div class="footer-contact" id="contact-section">
+                <h3><a href="#contact-section">Contact Information</a></h3>
+                <p>Email: <a href="mailto:support@figvora.com">support@figvora.com</a></p>
+                <p>Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
+                <p>Hours: Mon - Fri, 9am - 6pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Figvora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="ct.js"></script>
+</body>
+</html>
